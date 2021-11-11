@@ -1,0 +1,25 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+  #logo_line{
+animation: load 10s ease infinite forwards;}
+
+@keyframes load {
+0{
+stroke-dashoffset:0;}
+20%{stroke-dashoffset:-118;}
+100%{stroke-dashoffset:-118;}}</style>
+<path id="logo_line" stroke-dasharray="59" d="M6 9L12 15L18 9" stroke="#F7F7F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+  #logo_line{
+animation: load 1s ease infinite forwards;}
+
+@keyframes load {
+0{
+stroke-dashoffset:0;}
+40%{stroke-dashoffset:-59;}
+60%{stroke-dashoffset:-59;}
+100%{stroke-dashoffset:-118;}}</style>
+<path id="logo_line"stroke-dasharray="59" d="M6 9L12 15L18 9" stroke="#F7F7F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

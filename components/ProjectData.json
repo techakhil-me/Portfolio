@@ -1,0 +1,66 @@
+[
+  {
+    "pid": "stonks",
+    "title": "Paper Trading",
+    "category": "UI/UX",
+    "description": "A concept paper trading app with simple and minimal user interface.",
+    "isMob": true,
+    "link": "https://dribbble.com/shots/15689909-Concept-Paper-Trading-App"
+  },
+  {
+    "pid": "calorifit",
+    "title": "Calorifit",
+    "category": "WebDev",
+    "description": "A simple calorie tracker built on react, made for simplicity and to showcase minimal User Interface in a project.",
+    "isMob": true,
+    "link": "https://calorifit.netlify.app/"
+  },
+  {
+    "pid": "audi_bike",
+    "title": "E-bike Page",
+    "category": "UI/UX",
+    "description": "An concept landing page based on a 3d e-bike model by Ashok Yeli.",
+    "isMob": false,
+    "link": "https://dribbble.com/shots/15847382-Audi-E-bike-Landing-Page"
+  },
+  {
+    "pid": "1mm",
+    "title": "Brand Landing Page",
+    "category": "website",
+    "description": "A brand landing page with minimal UI and smooth scroll effects and animations.",
+    "isMob": false,
+    "link": "https://brandweb.vercel.app/"
+  },
+  {
+    "pid": "shop",
+    "title": "e-shop concept",
+    "category": "UI/UX",
+    "description": "UI design for a e-commerce concept app based on light theme and soft shadows.",
+    "isMob": true,
+    "link": "https://twitter.com/techakhil_me/status/1458822788819554306?s=20"
+  },
+  {
+    "pid": "linkedindark",
+    "title": "linkedin dark mode",
+    "category": "UI/UX",
+    "description": "Just my view on how linkedin should work on their dark mode feature.",
+    "isMob": true,
+    "link": "https://dribbble.com/shots/16145790-Linkedin-Dark-mode-concept"
+  },
+  {
+    "pid": "spotifyclone",
+    "title": "spotify clone",
+    "category": "website",
+    "description": "An attempt to clone spotify using django and complete ackend based on python.",
+    "isMob": false,
+    "link": "https://youttify.pythonanywhere.com/demo/"
+  },
+  {
+    "pid": "gaveit",
+    "title": "gaveit",
+    "category": "website",
+    "description": "An e-commerce project made as a part of a hackathon event, use",
+    "isMob": false,
+    "link": "https://gaveit.vercel.app/"
+  }
+]

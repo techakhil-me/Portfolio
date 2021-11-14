@@ -7,7 +7,7 @@ import SocialTray from "./SocialTray";
 const variants = {
   open: {
     opacity: 1,
-    transition: { duration: 1, staggerChildren: 0.1, delayChildren: 0.2 }
+    transition: { duration: 1, staggerChildren: 0.1, delayChildren: 0.2 },
   },
   closed: {
     opacity: 0,
@@ -15,9 +15,9 @@ const variants = {
       // duration: 0.1,
       staggerChildren: 0.05,
       staggerDirection: -1,
-      when: "afterChildren"
-    }
-  }
+      when: "afterChildren",
+    },
+  },
 };
 
 const childVariants = {
@@ -25,14 +25,14 @@ const childVariants = {
     y: 0,
     opacity: 1,
     rotateZ: "0deg",
-    transition: { stiffness: 1000 }
+    transition: { stiffness: 1000 },
   },
   closed: {
     y: 50,
     opacity: 0,
     rotateZ: "5deg",
-    transition: { stiffness: 200, duration: 0.1 }
-  }
+    transition: { stiffness: 200, duration: 0.1 },
+  },
 };
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
     home: "inActive",
     about: "inActive",
     contact: "inActive",
-    work: "inActive"
+    work: "inActive",
   };
   const [isActive, setActive] = useState(defaultNav);
 
@@ -158,7 +158,12 @@ const Navbar = () => {
             variants={variants}
             className="flex pointer-events-auto	 flex-col md:hidden space-y-8 h-screen items-center justify-center text-xl tracking-widest"
           >
-            <motion.li variants={childVariants}>
+            <motion.li
+              onClick={() => {
+                setisOpen(!isOpen);
+              }}
+              variants={childVariants}
+            >
               <Link
                 title="HOME"
                 className="h-10 text-4xl font-bold flex flex-col justify-center fx-underline"
@@ -167,7 +172,12 @@ const Navbar = () => {
                 HOME
               </Link>
             </motion.li>
-            <motion.li variants={childVariants}>
+            <motion.li
+              onClick={() => {
+                setisOpen(!isOpen);
+              }}
+              variants={childVariants}
+            >
               <Link
                 className="h-10 text-4xl font-bold flex flex-col justify-center fx-underline"
                 href="/about"
@@ -175,7 +185,12 @@ const Navbar = () => {
                 ABOUT
               </Link>
             </motion.li>
-            <motion.li variants={childVariants}>
+            <motion.li
+              onClick={() => {
+                setisOpen(!isOpen);
+              }}
+              variants={childVariants}
+            >
               <Link
                 className="h-10 text-4xl font-bold flex flex-col justify-center fx-underline"
                 href="/work"
@@ -183,7 +198,12 @@ const Navbar = () => {
                 WORK
               </Link>
             </motion.li>
-            <motion.li variants={childVariants}>
+            <motion.li
+              onClick={() => {
+                setisOpen(!isOpen);
+              }}
+              variants={childVariants}
+            >
               <Link
                 className="h-10 text-4xl font-bold flex flex-col justify-center fx-underline"
                 href="/contact"
@@ -191,7 +211,12 @@ const Navbar = () => {
                 CONTACT
               </Link>
             </motion.li>
-            <motion.div variants={childVariants}>
+            <motion.div
+              onClick={() => {
+                setisOpen(!isOpen);
+              }}
+              variants={childVariants}
+            >
               <SocialTray />
             </motion.div>
           </motion.ul>

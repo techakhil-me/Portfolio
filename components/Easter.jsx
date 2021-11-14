@@ -404,8 +404,8 @@ const Easter = () => {
       <div
         className={
           showSocial
-            ? "transform scale-150 p-6 transition duration-1000 opacity-1"
-            : "transform scale-150 p-6 transition duration-1000 opacity-0"
+            ? "transform md:scale-150 md:p-6 transition duration-1000 opacity-1"
+            : "transform md:scale-150 md:p-6 transition duration-1000 opacity-0"
         }
       >
         <SocialTray social={false} />

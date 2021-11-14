@@ -122,6 +122,7 @@ const ContactPage = () => {
   I Just came across your website and I...."
                   required
                 ></textarea>
+                <div className="flex md:flex-row flex-col items-center">
                 <button type="submit" className="py-6 flex space-x-12">
                   <span
                     href="/"
@@ -129,8 +130,9 @@ const ContactPage = () => {
                   >
                     Send
                   </span>
-                  <SocialTray />
                 </button>
+                <SocialTray />
+                </div>
               </form>
             </div>
           </>

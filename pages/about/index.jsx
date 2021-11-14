@@ -155,7 +155,8 @@ const AboutPage = () => {
             />
           </div>
           <div className="w-64 text-sm">
-            Its support that sustain us on the journey we've started. Its always joyfull to give back to the community, which made me what I am now.
+            Its support that sustain us on the journey we've started. Its always
+            joyfull to give back to the community, which made me what I am now.
           </div>
         </div>
       </section>
@@ -163,14 +164,14 @@ const AboutPage = () => {
         data-scroll-section
         className="flex flex-col  items-center justify-evenly h-screen"
       >
-        <div className="p-12 w-1/2  transform scale-150">
-          <SocialTray />
-        </div>
-        <div className="uppercase text-9xl font-bold">
+        <div className="uppercase text-9xl font-bold text-center">
           Lets
           <Link href="/contact">
             <a className="fx-underline text-stroke">Talk</a>
           </Link>
+        </div>
+        <div className="md:p-12 md:w-1/2  transform md:scale-150">
+          <SocialTray />
         </div>
       </section>
     </>

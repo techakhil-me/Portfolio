@@ -10,7 +10,7 @@ const Easter = () => {
   }, []);
   return (
     <motion.div
-      className="fixed top-0 z-50 left-0 w-screen h-screen bg-dark flex flex-col items-center justify-center"
+      className="fixed py-4 md:pt-0 top-0 z-50 left-0 w-screen h-full overflow-y-scroll md:h-screen bg-dark flex flex-col items-center justify-center"
     >
       <motion.div className="pt-6 text-center pb-0 text-4xl font-bold tracking-widest uppercase">
         <Typewriter

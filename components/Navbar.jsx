@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import SocialTray from "./SocialTray";
+import Head from "next/head";
 
 const variants = {
   open: {
@@ -37,6 +38,7 @@ const childVariants = {
 
 const Navbar = () => {
   const [isOpen, setisOpen] = useState(false);
+  const [page, setPage] = useState("home");
   const router = useRouter();
   const defaultNav = {
     home: "inActive",
@@ -45,11 +47,11 @@ const Navbar = () => {
     work: "inActive",
   };
   const [isActive, setActive] = useState(defaultNav);
-
   useEffect(() => {
     let Path = router.asPath.slice(1);
     Path = Path === "" ? "home" : Path;
     setActive({ ...defaultNav, [Path]: "Active" });
+    setPage(Path);
   }, [router]);
 
   return (
@@ -65,6 +67,34 @@ const Navbar = () => {
           : "fixed container pointer-events-none left-1/2 transfrom -translate-x-1/2 md:px-2 px-4 mx-auto text-light  z-20 top-0 transition duration-1000 ease-in-out antialiased w-full py-4"
       }
     >
+      <Head>
+        <title>{page.toUpperCase() + " | TechAkhil Portfolio"}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <meta name="title" content="TechAkhil - Portfolio" />
+        <meta
+          name="description"
+          content="Akhil Padmanabhan, Frontend Dev and Designer based in India. Explore more about me and my works here !"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="TechAkhil - Portfolio" />
+        <meta
+          property="og:description"
+          content="Akhil Padmanabhan, Frontend Dev and Designer based in India. Explore more about me and my works here !"
+        />
+        <meta property="og:image" content="/thumbnail.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="TechAkhil - Portfolio" />
+        <meta
+          property="twitter:description"
+          content="Akhil Padmanabhan, Frontend Dev and Designer based in India. Explore more about me and my works here !"
+        />
+        <meta property="twitter:image" content="/thumbnail.png" />
+      </Head>
       <div className="flex  justify-between items-center">
         <ul className="md:flex pointer-events-auto	 hidden items-center space-x-20 text-xs antialiased font-medium tracking-widest">
           <li>

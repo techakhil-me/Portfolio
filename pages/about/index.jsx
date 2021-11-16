@@ -155,8 +155,7 @@ const AboutPage = () => {
             />
           </div>
           <div className="w-64 text-sm">
-            Its support that sustain us on the journey we've started. Its always
-            joyfull to give back to the community, which made me what I am now.
+          Its the support that kept me going on the journey I've begun. It is always a joy to give back to the community that shaped me to who I am today.
           </div>
         </div>
       </section>

@@ -2,21 +2,24 @@ import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import SocialTray from "./SocialTray";
-const Easter = () => {
+import ScrollArrow from "../assets/ScrollArrow.svg";
+
+const Easter = ({ setEasterEgg }) => {
   const [breakHeart, setBreakHeart] = useState(false);
   const [showSocial, setShowSocial] = useState(false);
   useEffect(() => {
     setTimeout(() => setBreakHeart(true), 1000);
   }, []);
   return (
-    <motion.div
-      className="fixed py-4 md:pt-0 top-0 z-50 left-0 w-screen h-full overflow-y-scroll md:h-screen bg-dark flex flex-col items-center justify-center"
-    >
-      <motion.div className="pt-6 text-center pb-0 text-4xl font-bold tracking-widest uppercase">
+    <motion.div className="fixed py-4 md:pt-0 top-0 z-50 left-0 w-screen h-screen bg-dark flex flex-col items-center justify-center">
+      <div onClick={()=>setEasterEgg(false)} className=" fixed top-4 left-4 transform rotate-90">
+        <ScrollArrow />
+      </div>
+      <motion.div className="pt-6 text-center pb-0 text-2xl md:text-4xl font-bold tracking-widest uppercase">
         <Typewriter
           options={{
             cursor: "",
-            delay: 100
+            delay: 100,
           }}
           onInit={(typewriter) => {
             typewriter
@@ -33,7 +36,7 @@ const Easter = () => {
             breakHeart
               ? {
                   opacity: breakHeart ? "0" : "1",
-                  transition: breakHeart ? "1s ease-in-out" : "inherit"
+                  transition: breakHeart ? "1s ease-in-out" : "inherit",
                 }
               : null
           }
@@ -41,8 +44,7 @@ const Easter = () => {
           layoutId="heart"
         >
           <motion.svg
-            width="450"
-            height="412"
+            height="300"
             viewBox="0 0 450 412"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +155,7 @@ const Easter = () => {
         <motion.div
           style={{
             opacity: breakHeart ? "1" : "0",
-            transition: "1s ease-in-out"
+            transition: "1s ease-in-out",
           }}
           className={
             breakHeart
@@ -163,9 +165,8 @@ const Easter = () => {
         >
           <svg
             className="leftHeart"
-            style={{ marginRight: "-188px" }}
-            width="316"
-            height="412"
+            style={{ marginRight: "-150px" }}
+            height="300"
             viewBox="0 0 316 412"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -274,8 +275,7 @@ const Easter = () => {
           </svg>
           <svg
             className="rightHeart"
-            width="323"
-            height="412"
+            height="300"
             viewBox="0 0 323 412"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -382,11 +382,11 @@ const Easter = () => {
           </svg>
         </motion.div>
       </motion.div>
-      <div className="pb-6 -mt-12 text-center text-4xl font-bold tracking-widest uppercase">
+      <div className="pb-6 -mt-12 text-center text-2xl md:text-4xl font-bold tracking-widest uppercase">
         <Typewriter
           options={{
             cursor: "",
-            delay: 100
+            delay: 100,
           }}
           onInit={(typewriter) => {
             typewriter

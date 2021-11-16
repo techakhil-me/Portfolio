@@ -31,6 +31,12 @@ export function Scene(props) {
     if (window.innerWidth > 768) {
       document.addEventListener("mousemove", moveModel);
     }
+    upAndDown.onUpdate(({ y, rot }, elapsed) => {
+      mesh.current.position.y = y;
+      if (window.innerWidth < 768) {
+        mesh.current.rotation.y = -0.5 + rot;
+      }
+    });
     return () => {
       upAndDown.stop()
       document.removeEventListener("mousemove", moveModel);}
@@ -45,12 +51,7 @@ export function Scene(props) {
     mesh.current.rotation.y = -0.5 + e.clientX / window.innerWidth;
   };
 
-  upAndDown.onUpdate(({ y, rot }, elapsed) => {
-    mesh.current.position.y = y;
-    if (window.innerWidth < 768) {
-      mesh.current.rotation.y = -0.5 + rot;
-    }
-  });
+  
 
   return (
     <group

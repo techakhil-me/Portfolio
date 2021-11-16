@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <AnimatePresence exitBeforeEnter initial={false}>
-        {EasterEgg && <Easter />}
+        {EasterEgg && <Easter setEasterEgg={setEasterEgg}/>}
       </AnimatePresence>
       <div
         data-scroll-section

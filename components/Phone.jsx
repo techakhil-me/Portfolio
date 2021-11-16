@@ -16,15 +16,6 @@ function Model({ ProjectRef, pid }) {
   materialScreen.map.needsUpdate = true;
   useEffect(() => {
     ProjectRef.current.addEventListener("mousemove", rotatModel);
-    // const materialScreen = materials.Screen.clone();
-    // materialScreen.map = materialScreen.map.clone();
-    // let img = new Image();
-    // img.src = `./project/${pid}.png`;
-    // materialScreen.map.image = img;
-    // // let img = new Image();
-    // // img.src = `./project/${pid}.png`;
-    // // materials.Screen.map.image = img;
-    // materialScreen.map.needsUpdate = true;
   }, []);
 
   const rotatModel = (e) => {

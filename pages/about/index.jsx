@@ -67,11 +67,10 @@ const AboutPage = () => {
             <div className="text-2xl md:text-7xl">Padmanabhan</div>
           </div>
           <div className="max-w-3xl text-center md:text-left">
-            I’m Akhil aka “TechAkhil”, a developer and designer.I can speak
+            I’m Akhil aka “TechAkhil”, a developer and designer. I can speak
             multiple 'languages':), experienced in writing efficient PYTHON
-            scripts, DJANGO and REACT apps on all platforms and browsers. I care
-            deeply about building interfaces that are usable and pleasant for
-            the user. and indeed, COFFEE !
+            scripts, DJANGO and REACT apps on all platforms and browsers. I deeply care about building interfaces that are usable and pleasant for
+            the user and indeed, COFFEE !
           </div>
         </div>
       </motion.section>

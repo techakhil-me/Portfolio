@@ -56,8 +56,8 @@ const ContactPage = () => {
     //   });
   };
   useEffect(() => {
-    if (GlitchCount < 6) {
-      setTimeout(() => setLoading(!Loading), 500);
+    if (GlitchCount < 5) {
+      setTimeout(() => setLoading(!Loading), 700);
       setCount(GlitchCount + 1);
     } else setLoading(false);
   }, [Loading]);
@@ -111,7 +111,7 @@ const ContactPage = () => {
                   name="email"
                   type="text"
                   className="bg-transparent border-b-2 p-1 w-full"
-                  placeholder="Emai Address"
+                  placeholder="Email Address"
                   required
                 />
                 <textarea

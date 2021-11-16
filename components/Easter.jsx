@@ -165,7 +165,7 @@ const Easter = ({ setEasterEgg }) => {
         >
           <svg
             className="leftHeart"
-            style={{ marginRight: "-150px" }}
+            style={{ marginRight: "-136px" }}
             height="300"
             viewBox="0 0 316 412"
             fill="none"

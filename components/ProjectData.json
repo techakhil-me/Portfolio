@@ -43,7 +43,7 @@
     "pid": "linkedindark",
     "title": "linkedin dark mode",
     "category": "UI/UX",
-    "description": "Just my view on how linkedin should work on their dark mode feature.",
+    "description": "Just my view on how linkedin should work on their dark mode feature. Don't know why it did took so long for linkedin to roll dark theme.",
     "isMob": true,
     "link": "https://dribbble.com/shots/16145790-Linkedin-Dark-mode-concept"
   },
@@ -51,7 +51,7 @@
     "pid": "spotifyclone",
     "title": "spotify clone",
     "category": "website",
-    "description": "An attempt to clone spotify using django and complete ackend based on python.",
+    "description": "An attempt to clone spotify using django and complete backend based on python. This is one of my early projects and I admire them till date.",
     "isMob": false,
     "link": "https://youttify.pythonanywhere.com/demo/"
   },
@@ -59,7 +59,7 @@
     "pid": "gaveit",
     "title": "gaveit",
     "category": "website",
-    "description": "An e-commerce project made as a part of a hackathon event, use",
+    "description": "An e-commerce project made as a part of a hackathon event, uses express apis and react-tailwind based frontend. To be honest, it was an attempt to redesign amazon.",
     "isMob": false,
     "link": "https://gaveit.vercel.app/"
   }

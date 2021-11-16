@@ -311,11 +311,11 @@ a:hover,
 
 } */
 .leftHeart {
-  transform-origin: 226px 300px;
+  transform-origin: 160px 212px;
   transition: 2s ease-in-out;
 }
 .rightHeart {
-  transform-origin: 97px 300px;
+  transform-origin: 69px 212px;
   transition: 2s ease-in-out;
 }
 .breakHeart .leftHeart {

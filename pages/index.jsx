@@ -151,40 +151,10 @@ const Index = () => {
             </motion.div>
           </div>
         </section>
-        {/* projects section */}
-        {/* <section data-scroll-section>
-          <div className="flex justify-center antialiased">
-            <div className="justify-center w-full grid grid-col-1 gap-4 md:grid-cols-2">
-              <div className="space-y-4">
-                <span className="grid text-center place-content-center py-20 text-2xl font-medium tracking-widest leading-tight text-light uppercase">
-                  PROMINENT WORKS
-                </span>
-                <Project
-                  device="phone"
-                  thumbnail="https://cdn.discordapp.com/attachments/765973145852575746/882623615047172136/project_display-1.png"
-                />
-              </div>
-              <div className="space-y-4">
-                <Project
-                  device="laptop"
-                  thumbnail="https://cdn.discordapp.com/attachments/765973145852575746/882623615047172136/project_display-1.png"
-                />
-                <span className="grid place-content-center py-16">
-                  <a
-                    href="/"
-                    className="px-8 py-5 bg-gray-100 rounded-full text-xs tracking-widest leading-none text-center text-dark uppercase"
-                  >
-                    See more
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </section> */}
         <WorkPage isComponent={true} />
         <section data-scroll-section className="relative">
           <div className="container p-12 px-0 flex items-center justify-center md:justify-start text-2xl font-medium tracking-widest leading-tight text-light uppercase antialiased">
-            recent works
+            recents
           </div>
           <div>
             <div>
@@ -195,18 +165,22 @@ const Index = () => {
                   data-scroll-speed="3"
                   className="text-stroke text-4xl md:text-6xl font-bold tracking-widest uppercase"
                 >
-                  <span
+                  <a
+                  href="https://twitter.com/techakhil_me/status/1458822788819554306"
+                  target="_blank"
                     className="cursor-pointer"
-                    style={{ marginLeft: "1in" }}
+                    style={{ marginLeft: "2in" }}
                   >
-                    POrtfolio
-                  </span>
-                  <span
+                    E-commerce
+                  </a>
+                  <a
+                   href="https://www.linkedin.com/feed/update/urn:li:activity:6839884244643278848/"
+                   target="_blank"
                     className="cursor-pointer"
-                    style={{ marginLeft: "1in" }}
+                    style={{ marginLeft: "2in" }}
                   >
-                    Calorifit
-                  </span>
+                    g-cloud
+                  </a>
                 </div>
               </Marquee>
             </div>
@@ -222,12 +196,22 @@ const Index = () => {
                   data-scroll-speed="-3"
                   className="text-4xl md:text-6xl h-full font-bold tracking-widest uppercase"
                 >
-                  <span
+                 <a
+                   href="https://dribbble.com/shots/16145790-Linkedin-Dark-mode-concept"
+                   target="_blank"
                     className="cursor-pointer"
-                    style={{ marginLeft: "1in" }}
+                    style={{ marginLeft: "2in" }}
                   >
-                    POrtfolio
-                  </span>
+                    linkedin dark
+                  </a>
+                  <a
+                   href="https://dribbble.com/shots/16145790-Linkedin-Dark-mode-concept"
+                   target="_blank"
+                    className="cursor-pointer"
+                    style={{ marginLeft: "2in" }}
+                  >
+                    portfolio
+                  </a>
                 </div>
               </Marquee>
             </div>

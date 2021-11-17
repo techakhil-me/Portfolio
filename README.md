@@ -1,17 +1,8 @@
-## Deploy your own
+# Welcome to [Portfolio](https://www.techakhil.me/)
 
-Deploy the example using [Vercel](https://vercel.com):
+I’m Akhil aka '*TechAkhil*', a **developer** and **designer**. I can speak multiple 'languages':), experienced in writing efficient PYTHON scripts, DJANGO and REACT apps on all platforms and browsers. I deeply care about building interfaces that are usable and pleasant for the user and indeed, COFFEE !
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/hello-world)
 
-## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example hello-world hello-world-app
-# or
-yarn create next-app --example hello-world hello-world-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## About the website
+Its based on **nextjs**  and  **tailwindcss**, the animations and effects using framer motion. I've used some 3d models which i picked up from sketchfab credits goes to [engine9](https://sketchfab.com/3d-models/rhetorician-a89f035291d843069d73988cc0e25399) for such fabulous model. Imported them with the help of **threejs**. My complete UI process started from figma then to tailwind code.

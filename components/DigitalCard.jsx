@@ -7,7 +7,7 @@ const DigitalCard = () => {
   const card = useRef(null);
   useEffect(() => {
     VanillaTilt.init(tilt.current, {
-      reverse: true
+      reverse: true,
       // glare: true,
       // "max-glare": 0.2
     });
@@ -144,7 +144,11 @@ const DigitalCard = () => {
                   </g>
                 </svg>
 
-                <a href="/" className="text-base leading-none text-#d9d9d9">
+                <a
+                  href="https://www.instagram.com/techakhil.me/"
+                  target="_blank"
+                  className="text-base leading-none text-#d9d9d9"
+                >
                   @teckakhil.me
                 </a>
               </div>
@@ -174,8 +178,12 @@ const DigitalCard = () => {
                   </g>
                 </svg>
 
-                <a href="/" className="text-base leading-none text-#d9d9d9">
-                  www.techakhil.dev
+                <a
+                  href="https://www.techakhil.me/"
+                  target="_blank"
+                  className="text-base leading-none text-#d9d9d9"
+                >
+                  www.techakhil.me
                 </a>
               </div>
             </div>
@@ -197,8 +205,8 @@ const DigitalCard = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <a href="tel:+918169131969" className="text-base leading-none">
-                  +91 21684 65326
+                <a href="tel:+917977675557" className="text-base leading-none">
+                  +91 7977675557
                 </a>
               </div>
             </div>

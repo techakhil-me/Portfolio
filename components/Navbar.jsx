@@ -78,7 +78,7 @@ const Navbar = () => {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://www.techakhil.me/" />
         <meta property="og:title" content="TechAkhil - Portfolio" />
         <meta
           property="og:description"
@@ -87,7 +87,7 @@ const Navbar = () => {
         <meta property="og:image" content="/thumbnail.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="https://www.techakhil.me/" />
         <meta property="twitter:title" content="TechAkhil - Portfolio" />
         <meta
           property="twitter:description"

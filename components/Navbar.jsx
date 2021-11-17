@@ -93,7 +93,7 @@ const Navbar = () => {
           property="twitter:description"
           content="Akhil Padmanabhan, Frontend Dev and Designer based in India. Explore more about me and my works here !"
         />
-        <meta property="twitter:image" content="/thumbnail.png" />
+        <meta property="twitter:image" content="https://www.techakhil.me/thumbnail.png" />
       </Head>
       <div className="flex  justify-between items-center">
         <ul className="md:flex pointer-events-auto	 hidden items-center space-x-20 text-xs antialiased font-medium tracking-widest">

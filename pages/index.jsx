@@ -205,7 +205,7 @@ const Index = () => {
                     linkedin dark
                   </a>
                   <a
-                   href="https://dribbble.com/shots/16145790-Linkedin-Dark-mode-concept"
+                   href="https://www.linkedin.com/posts/techakhil_techakhil-portfolio-activity-6866672025730199552-7iOb"
                    target="_blank"
                     className="cursor-pointer"
                     style={{ marginLeft: "2in" }}

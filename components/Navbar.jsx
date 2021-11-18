@@ -69,7 +69,7 @@ const Navbar = () => {
     >
       <Head>
         <title>{page.toUpperCase() + " | TechAkhil Portfolio"}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta name="title" content="TechAkhil - Portfolio" />
         <meta
@@ -80,14 +80,17 @@ const Navbar = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.techakhil.me/" />
         <meta property="og:title" content="TechAkhil - Portfolio" />
+        <meta property="og:site_name" content="techakhil" />
         <meta
           property="og:description"
           content="Akhil Padmanabhan, Frontend Dev and Designer based in India. Explore more about me and my works here !"
         />
         <meta property="og:image" content="/thumbnail.png" />
-
+<meta name="keywords" content="PortFolio, about me, about techakhil,techakhil,  techakhil.me, akhil padmanabhan, akhil padmanabhan chathoth" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.techakhil.me/" />
+        <meta name="twitter:site" content="@techakhil_me" />
+		<meta name="twitter:creator" content="@techakhil_me" />
         <meta property="twitter:title" content="TechAkhil - Portfolio" />
         <meta
           property="twitter:description"

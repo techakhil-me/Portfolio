@@ -67,7 +67,7 @@ export default function List({ isComponent }) {
       ) : (
         <motion.div className="card">
           <span className="grid text-center place-content-center h-full text-2xl font-medium tracking-widest leading-tight text-light uppercase">
-            That's All
+            More Soon
           </span>
         </motion.div>
       )}

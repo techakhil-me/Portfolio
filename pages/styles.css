@@ -83,6 +83,32 @@ section {
 
 /* anchors */
 .loading {
+  mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 90%
+  );
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 90%
+  );
+  mask-size: 200%;
+  -webkit-mask-size: 200%;
+  animation: shine 1s linear infinite;
+}
+a:hover,
+.Active {
+  mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.8) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.8) 90%
+  );
+  mask-size: 200%;
+  animation: shine 3s linear infinite;
   -webkit-mask-image: linear-gradient(
     -75deg,
     rgba(0, 0, 0, 0.6) 30%,
@@ -94,6 +120,13 @@ section {
 }
 a:hover,
 .Active {
+  mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.8) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.8) 90%
+  );
+  mask-size: 200%;
   -webkit-mask-image: linear-gradient(
     -75deg,
     rgba(0, 0, 0, 0.8) 30%,

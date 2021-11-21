@@ -57,7 +57,7 @@ const ContactPage = () => {
   };
   useEffect(() => {
     if (GlitchCount < 5) {
-      setTimeout(() => setLoading(!Loading), 700);
+      setTimeout(() => setLoading(!Loading), 200);
       setCount(GlitchCount + 1);
     } else setLoading(false);
   }, [Loading]);
@@ -82,10 +82,7 @@ const ContactPage = () => {
         className="h-full min-h-screen w-full space-y-4 text-light flex flex-col items-center justify-center uppercase"
       >
         {!fsubmit ? (
-          <>
-            <div className="pb-6 pt-24 text-4xl font-bold tracking-widest text-center flicker text-gray-400">
-              something's <span className="text-light glow">wrong</span> here
-            </div>
+          <>  
             <div className="w-full flex md:space-x-6 md:flex-row flex-col items-center justify-center">
               <div className="md:text-6xl text-5xl max-w-lg font-bold md:text-left text-center">
                 please contact the <span className="text-stroke-sm">admin</span>{" "}
@@ -123,14 +120,14 @@ const ContactPage = () => {
                   required
                 ></textarea>
                 <div className="flex md:flex-row flex-col items-center md:space-x-24">
-                <button type="submit" className="py-6 flex space-x-12">
+                <a><button type="submit" className="py-6 flex space-x-12">
                   <span
                     href="/"
                     className="px-8 py-5 bg-gray-100 rounded-full text-xs tracking-widest leading-none text-center text-dark uppercase"
                   >
                     Send
                   </span>
-                </button>
+                </button></a>
                 <SocialTray />
                 </div>
               </form>

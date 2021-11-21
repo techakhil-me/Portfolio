@@ -318,13 +318,6 @@ a:hover,
   transform-origin: 69px 212px;
   transition: 2s ease-in-out;
 }
-.breakHeart .leftHeart {
-  transform: rotateZ(-5deg);
-}
-
-.breakHeart .rightHeart {
-  transform: rotateZ(5deg);
-}
 
 @-webkit-keyframes wobble-hor-bottom {
   0%,
@@ -477,7 +470,7 @@ a:hover,
 }
 
 /* locomotive scroll */
-/*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+/* locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
   overflow: hidden;
 }

@@ -26,6 +26,7 @@ const ResetScroll = (props) => {
 const Layout = (props) => {
   const containerRef = useRef(null);
   const { pathname } = useRouter();
+  const { scroll } = useLocomotiveScroll();
   const path = pathname.split("?")[0];
   return (
     // <div>
@@ -50,7 +51,7 @@ const Layout = (props) => {
           >
             <Navbar />
             {props.children}
-            <Footer />
+            <Footer scroll={scroll}/>
           </div>
         </ResetScroll>
       </LocomotiveScrollProvider>

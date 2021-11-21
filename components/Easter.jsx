@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 import SocialTray from "./SocialTray";
 import ScrollArrow from "../assets/ScrollArrow.svg";
 
-const Easter = ({ setEasterEgg }) => {
+const Easter = ({ setEasterEgg,setOnce,Once }) => {
   const [breakHeart, setBreakHeart] = useState(false);
   const [showSocial, setShowSocial] = useState(false);
   useEffect(() => {
@@ -165,7 +165,8 @@ const Easter = ({ setEasterEgg }) => {
         >
           <svg
             className="leftHeart"
-            style={{ marginRight: "-136px" }}
+            style={{ marginRight: "-136px",
+            transform: !Once ? "rotateZ(-5deg)":"rotateZ(0deg)"}}
             height="300"
             viewBox="0 0 316 412"
             fill="none"
@@ -276,6 +277,7 @@ const Easter = ({ setEasterEgg }) => {
           <svg
             className="rightHeart"
             height="300"
+            style={{transform: !Once ? "rotateZ(5deg)":"rotateZ(0deg)"}}
             viewBox="0 0 323 412"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -408,7 +410,7 @@ const Easter = ({ setEasterEgg }) => {
             : "transform md:scale-150 md:p-6 transition duration-1000 opacity-0"
         }
       >
-        <SocialTray social={false} />
+        <SocialTray social={false} setOnce={setOnce}/>
       </div>
     </motion.div>
   );

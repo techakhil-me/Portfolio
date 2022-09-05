@@ -136,6 +136,15 @@ const Navbar = () => {
               </a>
             </Link>
           </li>
+	  <li>
+              <a
+	      	href="https://techakhil.me/resume.pdf"
+		target="_blank"
+                className={`h-8 flex flex-col justify-center fx-underline ${isActive.contact}`}
+              >
+                RESUME
+              </a>
+          </li>
         </ul>
         <button
           className="text-light pointer-events-auto	 md:hidden w-10 h-10 relative focus:outline-none"

@@ -253,6 +253,20 @@ const Navbar = () => {
                 CONTACT
               </Link>
             </motion.li>
+	    <motion.li
+              onClick={() => {
+                setisOpen(!isOpen);
+              }}
+              variants={childVariants}
+            >
+              <a
+                className="h-10 text-4xl font-bold flex flex-col justify-center fx-underline"
+                href="https://www.techakhil.me/resume.pdf"
+		target="_blank"
+              >
+                RESUME
+              </a>
+            </motion.li>
             <motion.div
               onClick={() => {
                 setisOpen(!isOpen);

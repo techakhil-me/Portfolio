@@ -261,7 +261,7 @@ const Navbar = () => {
             >
               <a
                 className="h-10 text-4xl font-bold flex flex-col justify-center fx-underline"
-                href="https://www.techakhil.me/resume.pdf"
+                href="/resume.pdf"
 		target="_blank"
               >
                 RESUME

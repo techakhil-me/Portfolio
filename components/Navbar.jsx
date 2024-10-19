@@ -138,7 +138,7 @@ const Navbar = () => {
           </li>
 	  <li>
               <a
-	      	href="https://techakhil.me/resume.pdf"
+	      	href="https://techakhil.vercel.app/resume.pdf"
 		target="_blank"
                 className={`h-8 flex flex-col justify-center fx-underline ${isActive.contact}`}
               >
